@@ -3,7 +3,7 @@ create database sql_training;
 use sql_training;
 
 create table persoana(
-   idnp int(13),                 # idnp primary key
+   idnp bigint(13),              # idnp primary key
    nume varchar(10),             # numele
    pren varchar(10),             # prenumele
    adr varchar(30),              # adresa
@@ -30,7 +30,7 @@ create table angajare(
    data_ang date,                                             # data angajarii
    post_munca varchar(20),                                    # postul de munca
    data_con date,                                             # data concedierii
-   idnp int(13),                                              # idnp foreign key
+   idnp bigint(13),                                           # idnp foreign key
    id_post int(5),                                            # id-ul postului foreign key
 
    primary key (id_ang),                                      # set primary key
