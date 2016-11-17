@@ -28,7 +28,6 @@ create table post_de_munca(
 create table angajare(
    id_ang int(5) auto_increment,                              # id-ul angajarii primary key
    data_ang date,                                             # data angajarii
-   post_munca varchar(20),                                    # postul de munca
    data_con date,                                             # data concedierii
    idnp bigint(13),                                           # idnp foreign key
    id_post int(5),                                            # id-ul postului foreign key

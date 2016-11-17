@@ -31,5 +31,3 @@ insert into angajare (data_ang,data_con,idnp,id_post) values ('','2001/02/04',20
 insert into angajare (data_ang,data_con,idnp,id_post) values ('','2001/02/25',2008002000987,1);
 
 insert into angajare (data_ang,data_con,idnp,id_post) values ('2001/02/26','',2008002000987,2);
-
-insert into angajare (data_ang,data_con,idnp,id_post) values ('2000/05/29','',2008002002341,1);
