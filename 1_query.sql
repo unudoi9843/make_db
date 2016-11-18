@@ -8,7 +8,6 @@ select
    persoana.idnp as 'idnp',
    persoana.nume as 'nume',
    persoana.pren as 'prenume',
-   persoana.adr as 'adresa',
    post_de_munca.func as 'functia',
    post_de_munca.fir_angaj as 'firma angajatoare'
      from angajare

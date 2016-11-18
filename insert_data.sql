@@ -18,16 +18,16 @@ insert into post_de_munca (func,desc_post,fir_angaj,sal) values ('manager','desc
 insert into post_de_munca (func,desc_post,fir_angaj,sal) values ('vocalist','descriere vocalist','s.a. modestep',10000);
 
 
-insert into angajare (data_ang,data_con,idnp,id_post) values ('2000/05/16','',2008002004736,3);  # insert data in table angajare
+insert into angajare (data_ang,idnp,id_post) values ('2000/05/16',2008002004736,3);  # insert data in table angajare
 
-insert into angajare (data_ang,data_con,idnp,id_post) values ('2000/05/20','',2008002000987,1);
+insert into angajare (data_ang,idnp,id_post) values ('2000/05/20',2008002000987,1);
 
-insert into angajare (data_ang,data_con,idnp,id_post) values ('2000/05/29','',2008002002341,1);
+insert into angajare (data_ang,idnp,id_post) values ('2000/05/29',2008002002341,1);
 
-insert into angajare (data_ang,data_con,idnp,id_post) values ('2000/06/02','',2008002005426,2);
+insert into angajare (data_ang,idnp,id_post) values ('2000/06/02',2008002005426,2);
 
-insert into angajare (data_ang,data_con,idnp,id_post) values ('','2001/02/04',2008002004736,3);
+update angajare set data_con = '2001/02/04' where id_ang = 1;
 
-insert into angajare (data_ang,data_con,idnp,id_post) values ('','2001/02/25',2008002000987,1);
+update angajare set data_con = '2001/02/25' where id_ang = 2;
 
-insert into angajare (data_ang,data_con,idnp,id_post) values ('2001/02/26','',2008002000987,2);
+insert into angajare (data_ang,idnp,id_post) values ('2001/02/26',2008002000987,2);
