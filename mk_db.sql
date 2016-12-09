@@ -3,7 +3,7 @@ create database sql_training;
 use sql_training;
 
 create table persoana(
-   idnp int(13),                 # idnp primary key
+   idnp bigint(13),              # idnp primary key
    nume varchar(10),             # numele
    pren varchar(10),             # prenumele
    adr varchar(30),              # adresa
@@ -15,7 +15,7 @@ create table persoana(
 
 
 create table post_de_munca(
-   id_post int(5),                    # id-ul postului primary key
+   id_post int(5) auto_increment,     # id-ul postului primary key
    func varchar(20),                  # functia
    desc_post varchar(100),            # descrierea functiei
    fir_angaj varchar(20),             # firma angajatoare
@@ -26,11 +26,10 @@ create table post_de_munca(
 
 
 create table angajare(
-   id_ang int(5),                                             # id-ul angajarii primary key
+   id_ang int(5) auto_increment,                              # id-ul angajarii primary key
    data_ang date,                                             # data angajarii
-   post_munca varchar(20),                                    # postul de munca
    data_con date,                                             # data concedierii
-   idnp int(13),                                              # idnp foreign key
+   idnp bigint(13),                                           # idnp foreign key
    id_post int(5),                                            # id-ul postului foreign key
 
    primary key (id_ang),                                      # set primary key
